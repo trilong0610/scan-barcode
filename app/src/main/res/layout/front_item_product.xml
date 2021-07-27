@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+<!--    image-->
+    <LinearLayout
+        android:id="@+id/lo_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_front_item_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="25dp"
+            android:elevation="10dp"
+            android:layout_margin="10dp">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iv_front_product_item_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/logo" />
+            </FrameLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+<!--    Amount-->
+    <androidx.cardview.widget.CardView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:elevation="5dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignRight="@id/lo_1"
+        android:layout_alignTop="@+id/lo_1"
+        app:cardCornerRadius="45dp">
+        <TextView
+            android:id="@+id/tv_front_product_item_amount"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:text="100"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/green"
+            android:textSize="15sp"/>
+    </androidx.cardview.widget.CardView>
+
+<!--    Name-->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/lo_1"
+        android:layout_alignRight="@id/lo_1"
+        android:layout_alignBottom="@id/lo_1"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="25dp"
+        android:elevation="5dp">
+        <TextView
+            android:id="@+id/tv_front_product_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:backgroundTint="@color/white"
+
+            android:layout_margin="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="9sp"
+            android:text="Xịt Kháng Khuẩn Phục Hồi Trẻ Hóa Vùng Kín Zlove Cool Dung Tích 15ml"/>
+    </androidx.cardview.widget.CardView>
+
+<!--    barcode-->
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignLeft="@id/lo_1"
+        android:layout_alignTop="@+id/lo_1"
+        app:cardCornerRadius="15dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_front_product_item_barcode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="1234567891012"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="8sp"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
